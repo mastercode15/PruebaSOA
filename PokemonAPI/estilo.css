@@ -1,0 +1,49 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    margin: 0;
+    background-image: url(https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/como-viven-los-pokemon-dentro-de-las-pokeballs/117318589-1-esl-ES/Como-viven-los-Pokemon-dentro-de-las-Pokeballs.jpg?crop=1xw:0.8178913738019169xh;center,top&resize=1200:*);
+    background-size: cover ;
+    
+}
+.tittle{
+    text-align: center;
+    padding: 16px;
+}
+.pokemon{
+    border: 1px solid black;
+    padding: 10px;
+    background: rgb(238, 219, 238, 0.6);
+    text-align: center;
+    border-radius: 60px;
+    height: fit-content;
+}
+
+.card-img-top img{
+    width: auto;
+}
+.vs{
+    text-align: center;
+    padding-top: 10% !important;
+    font-size: 40px;
+    color:white;
+    font-weight: bold;
+}
+#buttonPlay{
+    text-align: center;
+    margin:auto;
+    font-size: 32px;
+}
+.card-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.names{
+    font-size: 25px;
+}
+.col{
+    float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+  

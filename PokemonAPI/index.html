@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="tittle" style="color: white; font-size: 50px; text-decoration:underline;"> POKEDEX</h1>
+    
+    <div class="pokemon-list container" id="listarpokemon" >
+
+
+        <div class="row">
+            <div class="col pokemon">
+                <div id="pok-1">
+                    <p class="card-text" style="text-transform: uppercase"></p>
+                    <img src="" class="card-img-top" style="width: auto;">
+                </div>
+                <div id="pok-2">
+                    <p class="card-text" style="text-transform: uppercase"></p>
+                    <img src="" class="card-img-top" style="width: auto;">
+                </div>
+            </div>
+            <div class="col vs">
+                <h1>VS</h1>
+            </div>
+            <div class="col pokemon">
+                <div id="pok-3">
+                    <p class="card-text" style="text-transform: uppercase"></p>
+                    <img src="" class="card-img-top" style="width: auto;">
+                </div>
+                <div id="pok-4">
+                    <p class="card-text" style="text-transform: uppercase"></p>
+                    <img src="" class="card-img-top" style="width: auto;">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                
+            </div>
+            <div class="col" id="buttonPlay">
+                <button style="margin-left: 2%;" type="button" class="btn btn-light" onclick="consultarPokemones()">Comenzar</button>
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="names" style="text-align: left; color: white">
+        <ul>
+            <li>Calle Xavier</li>
+            <li>Morales Sebastián</li>
+        </ul>
+    </div>
+
+    
+    <script>
+
+        let lista = document.getElementById("listarpokemon");
+        function consultarPokemon(id, number){
+            fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+                .then(res => {
+                    res.json()
+                    .then(pokemon => {
+                        console.log(pokemon)
+                        mostrarPokemon(pokemon, number)
+                    })
+                    
+                    
+                })
+        }
+        function consultarPokemones(){
+            let primerPokemon = Math.round(Math.random() * 150);
+            let segundoPokemon = Math.round(Math.random() * 150);
+            let tercerPokemon = Math.round(Math.random() * 150);
+            let cuartoPokemon = Math.round(Math.random() * 150);
+
+            consultarPokemon(primerPokemon, 1);
+            consultarPokemon(segundoPokemon, 2);
+            consultarPokemon(tercerPokemon, 3);
+            consultarPokemon(cuartoPokemon, 4);
+         }
+        function mostrarPokemon(pokemon, id){
+            let item = lista.querySelector(`#pok-${id}`);
+            let img = item.getElementsByTagName("img")[0].setAttribute("src", pokemon.sprites.front_default);
+            let nombre = item.getElementsByTagName("p")[0].innerHTML = pokemon.name;
+            
+        }
+        consultarPokemones();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+</body>
+</html>
