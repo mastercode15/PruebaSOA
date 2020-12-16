@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Cartelera>
+    <película>
+        <código>M68428</código>
+        <título>Iron Man: el hombre de hierro</título>
+        <año>2013</año>
+        <duración>
+            <horas>2</horas>
+            <minutos>6</minutos>
+            <segundos>10</segundos>
+        </duración>
+        <nacionalidad>Estados Unidos</nacionalidad>
+        <genero>Acción/Ciencia ficción</genero>
+        <clasificación>No recomendada menores de 7 años</clasificación>
+        <director>
+            <nombre>Jon</nombre>
+            <apellido>Favreau</apellido>
+            <fecha_de_nacimiento>
+                <año>1966</año>
+                <mes>octubre</mes>
+                <día>19</día>
+            </fecha_de_nacimiento>
+        </director>
+        <reparto>
+            <actores_principales>
+                <actor>
+                    <nombre_original>Robert Downey Jr</nombre_original>
+                    <nombres_en_película>Tony Stark / Iron Man</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Terrence Howard</nombre_original>
+                    <nombres_en_película>Coronel James "Rhodey" Rhodes</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Jeff Bridges</nombre_original>
+                    <nombres_en_película>Obadiah Stane / Iron Monger</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Shaun Toub</nombre_original>
+                    <nombres_en_película>Yinsen</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Gwyneth Paltrow</nombre_original>
+                    <nombres_en_película>Virginia "Pepper" Potts</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Paul Bettany</nombre_original>
+                    <nombres_en_película>J.A.R.V.I.S.</nombres_en_película>
+                </actor>
+            </actores_principales>
+            <actores_secundarios>
+                <actor>
+                    <nombre_original>Leslie Bibb</nombre_original>
+                    <nombres_en_película>Christine Everhart</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Faran Tahir</nombre_original>
+                    <nombres_en_película>Raza</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Clark Gregg</nombre_original>
+                    <nombres_en_película>Agente Phil Coulson</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Jon Favreau</nombre_original>
+                    <nombres_en_película>Happy Hogan</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Samuel L. Jackson</nombre_original>
+                    <nombres_en_película>Nicholas "Nick" Fury</nombres_en_película>
+                </actor>
+                <actor>
+                    <nombre_original>Stan Lee</nombre_original>
+                    <nombres_en_película>Stan Lee</nombres_en_película>
+                </actor>
+            </actores_secundarios>
+            <dobles>
+                <actor>
+                    <nombre_original>Glenn Foster</nombre_original>
+                    <actor_sustituido>Robert Downey Jr</actor_sustituido>
+                </actor>
+            </dobles>
+        </reparto>
+    </película>
+    
+</Cartelera>
